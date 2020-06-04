@@ -18,4 +18,4 @@ class MegamanSpritesFactory(AbstractFactory):
 
     def moveRight(self):
         right = rightMegaman()
-        return right.get_sprites
+        return right.get_sprites()

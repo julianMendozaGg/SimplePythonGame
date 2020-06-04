@@ -8,7 +8,7 @@ class Builder():
 
 
 # Nuestro constructor concreto
-class MegamanBuilder(self):
+class MegamanBuilder():
     def __init__(self):
         self.factory = MegamanSpritesFactory()
 
