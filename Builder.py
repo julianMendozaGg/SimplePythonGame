@@ -14,4 +14,19 @@ class MegamanBuilder():
 
     def get_sprites(self):
         return [self.factory.moveLeft(),
-                self.factory.moveRight()]
+                self.factory.moveRight(),
+                self.factory.moveUp(),
+                self.factory.moveDown(),
+                self.factory.power()]
+
+
+class GokuBuilder():
+    def __init__(self):
+        self.factory = GokuSpritesFactory()
+
+    def get_sprites(self):
+        return [self.factory.moveLeft(),
+                self.factory.moveRight(),
+                self.factory.moveUp(),
+                self.factory.moveDown(),
+                self.factory.power()]
