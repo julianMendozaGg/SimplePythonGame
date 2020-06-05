@@ -13,6 +13,7 @@ import loadImages
 
 class Juego():
     
+    
     i=0
     width = 900
     height = 600
@@ -43,8 +44,7 @@ class Juego():
                 pygame.quit()
                 empezar = False
                 sys.exit()
-        #screen.fill(colour)
-        #if jugando:
+        
         screen.blit(background,(0,0))
         charac.update()
         charac.drawCharacter(screen)
