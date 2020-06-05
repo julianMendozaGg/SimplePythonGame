@@ -109,4 +109,9 @@ class powerGoku(power):
     def get_sprites(self):
         return[loadImages.load("gokuSprites/GP1.png"),
                loadImages.load("gokuSprites/GP2.png"),
-               loadImages.load("gokuSprites/GN.png")]
+               loadImages.load("gokuSprites/GP3.png"),
+               loadImages.load("gokuSprites/GP4.png"),
+               loadImages.load("gokuSprites/GP5.png"),
+               loadImages.load("gokuSprites/GP6.png"),
+               loadImages.load("gokuSprites/GP7.png"),
+               loadImages.load("gokuSprites/GP8.png")]

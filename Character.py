@@ -28,17 +28,17 @@ class Character(Sprite):
 
         if pressed[K_SPACE]:
             self.direction = 4
-            time.sleep(0.2)
+            time.sleep(0.09)
 
         if self.movementLeft:
             if pressed[K_LEFT]:
                 self.posX -= self.speed
-                time.sleep(0.08)
+                time.sleep(0.06)
                 self.direction = 0
         if self.movementRight:
             if pressed[K_RIGHT]:
                 self.posX += self.speed
-                time.sleep(0.08)
+                time.sleep(0.06)
                 self.direction = 1
 
                 """elif pressed[K_UP]:
