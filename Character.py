@@ -38,6 +38,8 @@ class Character(Sprite):
             time.sleep(0.06)
             self.direction = 0
 
+    
+
     def doPower(self):
         pressed = pygame.key.get_pressed()
         if pressed[K_SPACE]:
@@ -47,7 +49,7 @@ class Character(Sprite):
     # Esta clase es la que ayuda a cambiar los sprites de los peronajes segun el movimiento
     def changeSprite(self):
         pressed = pygame.key.get_pressed()
-        if pressed[K_RIGHT] or pressed[K_LEFT] or pressed[K_SPACE]:
+        if pressed[K_RIGHT] or pressed[K_LEFT] or pressed[K_SPACE] or pressed[K_UP]:
             try:
                 self.image = self.graphics[self.direction][self.cont]
                 self.cont += 1
@@ -65,6 +67,7 @@ class Character(Sprite):
         self.moveRight()
         self.moveLeft()
         self.changeSprite()
+        
 
     def drawCharacter(self, screen):
         screen.blit(self.image, (self.posX, self.posY))
